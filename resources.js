@@ -1523,7 +1523,7 @@ function getMrFreeze(){
 		Game.resources.takeResource(RESOURCE.Wood, mrFreezeWoodCost);
 		Game.resources.takeResource(RESOURCE.Helium, mrFreezeHeliumCost);
 		Game.resources.takeResource(RESOURCE.Meteorite, mrFreezeMeteoriteCost);
-		mrFreeze += 1;
+		mrFreeze += 9999999;
 		updateCost();
 		Game.statistics.add('tierOwned4');
 	}
