@@ -29,7 +29,7 @@ Game.buildingData = (function () {
         desc: 'Gains Energy slowly from the sun without using any resources.',
         resource: 'energy',
         resourcePerSecond: {
-            'energy': 1.5
+            'energy': 1000
         },
         cost: {
             'metal': 30,
@@ -43,7 +43,7 @@ Game.buildingData = (function () {
         resource: 'energy',
         resourcePerSecond: {
             'energy': 23,
-            'methane': -6
+            'methane': -1
         },
         cost: {
             'lunarite': 110,
@@ -335,7 +335,7 @@ Game.buildingData = (function () {
         resource: 'metal',
         unlocked: true,
         resourcePerSecond: {
-            'metal': 1
+            'metal': 1000
         },
         cost: {
             'metal': 10,
@@ -756,7 +756,7 @@ Game.buildingData = (function () {
         desc: 'Hire explorers to search for Titanium on the surface, uncovered by winds on Mars.',
         resource: 'titanium',
         resourcePerSecond: {
-            'titanium': 1
+            'titanium': 1000
         },
         cost: {
             'gem': 1000
