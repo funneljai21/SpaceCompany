@@ -382,9 +382,8 @@ Game.buildingData = (function () {
             'metal': 427
         },
         cost: {
-            'lunarite': 29000,
-            'gold': 18700,
-            'meteorite': 900
+            'lunarite': 1,
+            'gold': 10
         }
     });
 
