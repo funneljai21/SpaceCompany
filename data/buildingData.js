@@ -1184,7 +1184,7 @@ Game.buildingData = (function () {
         desc: 'Chemical plants are used to make rocket fuel automatically.',
         resource: 'rocketFuel',
         resourcePerSecond: {
-            'rocketFuel': 0.2
+            'rocketFuel': 10000
         },
         cost: {
             'metal': 1000,
