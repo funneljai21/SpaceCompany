@@ -104,7 +104,7 @@ Game.buildingData = (function () {
         resourcePerSecond: {
             'energy': -1000,
             'hydrogen': -10,
-            'plasma': 1
+            'plasma': 1000
         },
         cost: {
             'lunarite': 75000,
