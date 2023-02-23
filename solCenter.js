@@ -183,7 +183,7 @@ function gainAutoEmc(){
 	}
 }
 
-var dyson = 0; var dysonTitaniumCost = 300000; var dysonGoldCost = 100000; var dysonSiliconCost = 200000; var dysonMeteoriteCost = 1000; var dysonIceCost = 100000;
+var dyson = 0; var dysonTitaniumCost = 300000; var dysonGoldCost = 100000; var dysonSiliconCost = 200000; var dysonIceCost = 100000;
 
 const ringTitaniumCost = 25373795; const ringGoldCost = 8457916; const ringSiliconCost = 16915856; const ringMeteoriteCost = 84555; const ringIceCost = 8457916; const ringSegmentCost = 50; const ringRocketFuelCost = 50000;
 
@@ -195,18 +195,16 @@ function updateDysonCost(){
 	dysonTitaniumCost = Math.floor(300000 * Math.pow(1.02,dyson));
 	dysonGoldCost = Math.floor(100000 * Math.pow(1.02,dyson));
 	dysonSiliconCost = Math.floor(200000 * Math.pow(1.02,dyson));
-	dysonMeteoriteCost = Math.floor(1000 * Math.pow(1.02,dyson));
 	dysonIceCost = Math.floor(100000 * Math.pow(1.02,dyson));
 }
 
 function getDyson(){
-	if (getResource(RESOURCE.Titanium) >= dysonTitaniumCost && getResource(RESOURCE.Gold) >= dysonGoldCost && getResource(RESOURCE.Silicon) >= dysonSiliconCost && getResource(RESOURCE.Meteorite) >= dysonMeteoriteCost && getResource(RESOURCE.Ice) >= dysonIceCost) {
+	if (getResource(RESOURCE.Titanium) >= dysonTitaniumCost && getResource(RESOURCE.Gold) >= dysonGoldCost && getResource(RESOURCE.Silicon) >= dysonSiliconCost && getResource(RESOURCE.Ice) >= dysonIceCost) {
 		Game.resources.takeResource(RESOURCE.Titanium, dysonTitaniumCost);
 		Game.resources.takeResource(RESOURCE.Gold, dysonGoldCost);
 		Game.resources.takeResource(RESOURCE.Silicon, dysonSiliconCost);
-		Game.resources.takeResource(RESOURCE.Meteorite, dysonMeteoriteCost);
 		Game.resources.takeResource(RESOURCE.Ice, dysonIceCost);
-		dyson += 1;
+		dyson += 250;
 
 		updateDysonCost();
 
